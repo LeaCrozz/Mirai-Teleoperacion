@@ -54,7 +54,7 @@ FLOTA = {
 }
 ```
 
-Si las Raspberry tienen otras IPs, edítalas en.
+Si las Raspberry tienen otras IPs, edítarlas en.
 
 ---
 
@@ -64,8 +64,8 @@ Si las Raspberry tienen otras IPs, edítalas en.
 
 Para **cada** vehículo que vayas a usar:
 
-1. Enciende la Raspberry y verifica que esté conectada a la red local.
-2. Carga/transfiere los scripts del vehículo a la Raspberry.
+1. Enciender la Raspberry y verificar que esta conectada a la red local.
+2. Carga/transferir los scripts del vehículo a la Raspberry.
 3. Arranca el script del vehículo:
 
    ```bash
@@ -76,7 +76,7 @@ Para **cada** vehículo que vayas a usar:
    python3 [script_bulldozer.py]
    ```
 
-4. Confirma que la Raspberry empieza a transmitir.
+4. Confirmar que la Raspberry empieza a transmitir.
 
 ### 2. Preparar la laptop (estación de control)
 
@@ -87,7 +87,7 @@ Para **cada** vehículo que vayas a usar:
    ...\modelos_mirai_v2\mejor_modelo.pth
    ```
 
-3. (Opcional) Si la cámara cenital no es el índice 1, ajusta `GlobalCamThread(cam_index=1)` en el script — prueba 0, 1 o 2.
+3. (Opcional) Si la cámara cenital no es el índice 1, ajusta `GlobalCamThread(cam_index=1)` en el script — cambiar a 0, 1 o 2.
 
 ### 3. Arrancar la terminal
 
@@ -95,7 +95,7 @@ Para **cada** vehículo que vayas a usar:
 python mirai_teleop_tracker.py
 ```
 
-La ventana de control debería abrirse. En la barra superior verás el estado de la IA y del tracking del robot.
+La ventana de control debería abrirse. En la barra superior se vera el estado de la IA y del tracking del robot.
 
 ---
 
@@ -113,14 +113,14 @@ La ventana de control debería abrirse. En la barra superior verás el estado de
 
 ### Modos de asistencia IA
 
-- **OFF (visual):** la IA solo muestra sus sugerencias en pantalla; tú controlas todo.
-- **BLEND:** cuando sueltas un control, la IA lo completa suavemente. Si tú lo mueves, mandas tú.
-- **OVERRIDE:** la IA controla el vehículo; tú interrumpes moviendo el joystick por encima del umbral.
+- **OFF (visual):** la IA solo muestra sugerencias en pantalla; el usuario controla todo.
+- **BLEND:** cuando el usuario suelta el control, la IA lo completa suavemente. Si el usuario mueve, mandas el usuario.
+- **OVERRIDE:** la IA controla el vehículo; el usuario interrumpe moviendo el joystick por encima del umbral.
 
 ### Tracking y retorno (cámara cenital)
 
 1. Coloca el vehículo en su posición de inicio.
-2. Verifica que en la barra superior diga **"● ROBOT DETECTADO"** (verde). En la miniatura cenital verás un círculo verde sobre el marcador del vehículo.
+2. Verifica que en la barra superior diga **"● ROBOT DETECTADO"** (verde). En la miniatura cenital se vera un círculo verde sobre el marcador del vehículo.
 3. Pulsa **"CALIBRAR HOME"** para guardar esa posición como punto de retorno.
 4. Durante la fase 0 en modo OVERRIDE, cuando el vehículo regrese cerca del home, el sistema detiene el control automáticamente.
 
